@@ -74,6 +74,11 @@ since the queue won't reorder itself.
 
 Returns whether the priority queue is empty or not.
 
+### PriorityQueue#remove(u, cmp)
+
+Finds and removes every instance of `u` from the priority queue,
+based on `cmp`.
+
 ### PriorityQueue#peek()
 
 Peeks at the top element of the priority queue.

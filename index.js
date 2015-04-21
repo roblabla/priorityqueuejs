@@ -103,6 +103,17 @@ PriorityQueue.prototype.deq = function() {
   return first;
 };
 
+PriorityQueue.prototype.remove = function(u, cmp) {
+  var curr = 0;
+  while (curr < this._elements.length)
+  {
+    if (cmp(u, this._elements[curr]) == 0)
+      this._elements.splice(curr, 1);
+    else
+      curr++;
+  }
+};
+
 /**
  * Enqueues the `element` at the priority queue and returns its new size.
  *
